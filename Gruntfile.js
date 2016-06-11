@@ -47,6 +47,15 @@ module.exports = function(grunt) {
         ],
         dest: 'public/modules.js'
       }
+    },
+    watch: {
+      scripts: {
+        files: ['client/**/*'],
+        tasks: ['copy', 'concat'],
+        options: {
+          spawn: false,
+        },
+      },
     }
   });
 
@@ -55,8 +64,11 @@ module.exports = function(grunt) {
   
   // Load the plugin that provides the "concat" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
+  
+  // Load the plugin that provides the "watch" task.
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['copy', 'concat']);
+  grunt.registerTask('default', ['copy', 'concat', 'watch']);
 
 };

@@ -8,9 +8,21 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: 'client/',
-            src: ['**'], dest: 'public/'
+            cwd: 'client',
+            src: ['*'],
+            dest: 'public/',
+            filter: 'isFile'
           },
+        ]
+      },
+      partials: {
+        files: [
+          {
+            expand: true,
+            cwd: 'client/modules',
+            src: ['**/*.html'],
+            dest: 'public/'
+          }      
         ]
       }
     },
@@ -20,9 +32,20 @@ module.exports = function(grunt) {
       },
       lib: {
         src: [
-          'node_modules/angular/angular.min.js'
+          'node_modules/angular/angular.min.js',
+          'node_modules/angular-route/angular-route.min.js'
         ],
         dest: 'public/lib.js'
+      },
+      modules: {
+        src: [
+          'client/modules/example/example.config.js',
+          'client/modules/example/services/example.service.js',
+          'client/modules/example/controllers/example.route.ctrl.js',
+          'client/modules/example/controllers/examples-list.directive.ctrl.js',
+          'client/modules/example/directives/examples-list.directive.js'
+        ],
+        dest: 'public/modules.js'
       }
     }
   });

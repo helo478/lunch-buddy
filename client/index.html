@@ -4,14 +4,11 @@
     <meta charset="utf-8">
     <title>Spring Angular Bootstrap</title>
     <script src="/lib.js"></script>
-    
-    <script type="text/javascript">
-angular.module('app', []).controller('appCtrl', function($log) {
-  $log.debug('Initializing appCtrl');
-});
-    </script>
+    <script src="/modules.js"></script>
+    <script src="/application.js"></script>
   </head>
   <body ng-controller="appCtrl">
     <h1>Hello, World!</h1>
+    <ng-view></ng-view>
   </body>
 </html>

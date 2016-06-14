@@ -10,5 +10,16 @@
   
   .controller('appCtrl', function($log) {
     $log.debug('Initializing appCtrl');
+  })
+
+  .controller('NavbarCtrl', function($log, $location) {
+    $log.debug('Initializing NavbarCtrl');
+    
+    this.navCollapsed;
+    
+    this.isActive = function(viewLocation) {
+      return viewLocation === $location.path();
+    };
   });
+  
 })();

@@ -1,6 +1,8 @@
 <p>Example Route</p>
-<form ng-submit="routeCtrl.addExample()">
-  <input class="form-control" ng-model="routeCtrl.newExample.name" type="text">
+<form ng-submit="routeCtrl.addExample()" novalidate>
+  <div class="form-group">
+    <input class="form-control" ng-model="routeCtrl.newExample.name" type="text">
+  </div>
   <button class="btn btn-primary">Submit</button>
 </form>
 <examples-list></examples-list>

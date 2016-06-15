@@ -30,12 +30,19 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
-      lib: {
+      libjs: {
         src: [
           'node_modules/angular/angular.min.js',
-          'node_modules/angular-route/angular-route.min.js'
+          'node_modules/angular-route/angular-route.min.js',
+          'node_modules/angular-bootstrap-npm/dist/angular-bootstrap.min.js'
         ],
         dest: 'public/lib.js'
+      },
+      libcss: {
+        src: [
+          'node_modules/bootstrap/dist/css/bootstrap.min.css'
+        ],
+        dest: 'public/lib.css'
       },
       modules: {
         src: [

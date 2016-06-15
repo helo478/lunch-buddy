@@ -1,4 +1,4 @@
-package com.example;
+package com.example.resources.example;
 
 import javax.validation.Valid;
 

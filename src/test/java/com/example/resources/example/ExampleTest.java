@@ -1,13 +1,17 @@
-package com.example;
+package com.example.resources.example;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class ExampleTest {
-  
+
   private static final int CONSISTENCY_RUNS = 100;
-  
+
   private static final long[] EXAMPLE_IDS = { //@formatter:off
       1,
       1,
@@ -19,7 +23,7 @@ public class ExampleTest {
       21,
       Long.MAX_VALUE
   }; //@formatter:on
-  
+
   private static final String[] EXAMPLE_NAMES = { //@formatter:off
       null,
       "Sterling Archer",

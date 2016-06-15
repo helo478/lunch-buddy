@@ -1,2 +1,2 @@
-# spring-angular-bootstrap
-A quickstart using Spring, AngularJS, and UI Bootstrap
+# lunch-buddy
+Easily plan lunch outings with co-workers at AT&T Bothell CDT

@@ -1,20 +1,20 @@
 {
-  "name": "spring-angular-bootstrap",
+  "name": "lunch-buddy",
   "version": "1.0.0",
-  "description": "A quickstart using Spring, AngularJS, and UI Bootstrap",
+  "description": "Easily plan lunch outings with co-workers at AT&T Bothell CDT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helo478/spring-angular-bootstrap.git"
+    "url": "git+https://github.com/helo478/lunch-buddy.git"
   },
   "author": "Don Subert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helo478/spring-angular-bootstrap/issues"
+    "url": "https://github.com/helo478/lunch-buddy/issues"
   },
-  "homepage": "https://github.com/helo478/spring-angular-bootstrap#readme",
+  "homepage": "https://github.com/helo478/lunch-buddy#readme",
   "devDependencies": {
     "concat": "0.0.1-security",
     "copy": "^0.2.0",
